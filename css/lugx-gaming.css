@@ -294,10 +294,33 @@ input:focus {
     top: 35px;
     width: 100%;
 }
+
+.header.sticky {
+    top: 0;
+    z-index: 100;
+    padding: 20px 0;
+    position: fixed;
+    box-shadow: 0 0 10px 0 #00000075;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 35%;
+    background-image: url(../images/banner-bg.jpg);
+    border-radius: 0 0 50px 50px;
+}
+
 .header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header .logo img {
+    height: 60px;
+    display: block;
+}
+
+.header.sticky .logo img {
+    height: 43px;
 }
 
 .header .links ul {
