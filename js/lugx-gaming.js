@@ -1,7 +1,8 @@
-let header = document.querySelector('.header');
+let header = document.querySelector('.header'),
+    offsetTop = header.offsetTop;
 
 window.addEventListener("scroll", function (e) {
-  if (this.scrollY > 35) {
+  if (this.scrollY > offsetTop) {
     header.classList.add('sticky');
   } else {
     header.classList.remove('sticky');
